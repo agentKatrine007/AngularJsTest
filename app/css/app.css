@@ -1,0 +1,773 @@
+/* app css stylesheet */
+
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt,
+dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* start editing from here */
+a {
+    text-decoration: none;
+}
+
+.txt-rt {
+    text-align: right;
+}
+
+/* text align right */
+.txt-lt {
+    text-align: left;
+}
+
+/* text align left */
+.txt-center {
+    text-align: center;
+}
+
+/* text align center */
+.float-rt {
+    float: right;
+}
+
+/* float right */
+.float-lt {
+    float: left;
+}
+
+/* float left */
+.clear {
+    clear: both;
+}
+
+/* clear float */
+.pos-relative {
+    position: relative;
+}
+
+/* Position Relative */
+.pos-absolute {
+    position: absolute;
+}
+
+/* Position Absolute */
+.vertical-base {
+    vertical-align: baseline;
+}
+
+/* vertical align baseline */
+.vertical-top {
+    vertical-align: top;
+}
+
+/* vertical align top */
+nav.vertical ul li {
+    display: block;
+}
+
+/* vertical menu */
+nav.horizontal ul li {
+    display: inline-block;
+}
+
+/* horizontal menu */
+img {
+    max-width: 100%;
+}
+
+/*end reset*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ------ Header -----*/
+.header {
+    background: #f5f5f5;
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    width: 100%;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.49);
+    -webkit-box-shadow: 0px 3px 5px rgba(60, 60, 60, 0.03);
+    -moz-box-shadow: 0px 3px 5px rgba(60, 60, 60, 0.03);
+    box-shadow: 0px 3px 5px rgba(60, 60, 60, 0.03);
+}
+
+.logo {
+    float: left;
+}
+
+.logo a {
+    color: #000;
+    font-size: 2.5em
+}
+
+.top-nav {
+    float: right
+}
+
+.top-nav ul li {
+    display: inline-block;
+}
+
+.top-nav ul li a {
+    color: #191F2F;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    padding: 1.5em;
+    display: block;
+}
+
+.top-nav li.active > a, .top-nav li > a:hover {
+    color: #000;
+}
+
+/*------ End-Header -----*/
+
+/*----start-image-banner-----*/
+.component {
+    padding: 7em 0 0 0;
+    background-size: 100%;
+    margin: 2px 0;
+    border: 1px solid #eee;
+}
+
+.info {
+    float: left;
+    width: 50%;
+    text-align: right;
+    margin-bottom: 7em;
+}
+
+.info h1 {
+    font-size: 4em;
+}
+
+.info h3 {
+    color: #ff003b;
+}
+
+.img-empl {
+    float: right;
+    width: 47.3%;
+    text-align: left;
+    height: 598px;
+    background: url("http://www.grandars.ru/images/1/review/id/3212/bf3b3936d3.jpg") no-repeat 63px 0px;
+    margin-top: 7em;
+    margin-bottom: 1.5em;
+}
+
+.grids-inputs {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #E6E6E6;
+    width: 100%;
+    margin: 0 auto;
+    background: #F2F4F5;
+    padding: 0.5em;
+}
+
+.grids-inputs input[type="text"] {
+    padding: 1em;
+    font-family: 'Open Sans', sans-serif;
+    outline: 1px solid #E6E6E6;;
+    border: none;
+    width: 80%;
+    text-transform: uppercase;
+    line-height: normal;
+    color: #81888d;
+}
+
+.grids-inputs textarea {
+    padding: 1em;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+    outline: 1px solid #E6E6E6;;
+    border: none;
+    width: 80%;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #81888d;
+}
+
+.grids-inputs input[type="submit"] {
+    margin-top: 1em;
+    width: 80%;
+    background: #191F2F;
+    border: none;
+    padding: 1em 3em;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+
+.grids-inputs input[type="submit"]:hover {
+    background: #000;
+}
+
+.grids-inputs h3 {
+    text-align: center;
+    font-size: 2em;
+    width: 40%;
+    margin: 0em auto 1em auto;
+    color: #191F2F;
+}
+
+.grids-inputs {
+    padding: 8em 0 9em 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: 2px 0;
+}
+
+#list {
+    width: 90%;
+    border: 1px solid #E6E6E6;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+#list th {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#users tr {
+    background-color: #fff;
+    text-align: left;
+}
+
+#list td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding-left: 1em;
+}
+
+#list tbody tr:hover {
+    background-color: #ccc;
+}
+
+#list img {
+    width: auto;
+    height: 100px;
+}
+
+.img-details {
+    width: 43.3%;
+    float: right;
+    text-align: left;
+    margin-top: 7em;
+}
+
+.img-details img{
+    width: auto;
+    height: 300px;
+}
+
+/*----responsive-design-----*/
+@media only screen and (max-width: 1440px) and (min-width: 1366px) {
+    .wrap {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1280px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .grids-inputs input[type="text"] {
+        width: 75%;
+    }
+
+    .grids-inputs input[type="submit"] {
+        width: 75%;
+    }
+
+    .grids-inputs textarea {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .grids-inputs input[type="text"] {
+        width: 75%;
+    }
+
+    .grids-inputs input[type="submit"] {
+        width: 75%;
+    }
+
+    .grids-inputs textarea {
+        width: 75%;
+    }
+
+    .grids-inputs form {
+        width: 51%;
+    }
+
+    .img-empl {
+        width: 43.3%;
+    }
+
+    .info {
+        width: 53%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .grids-inputs input[type="text"] {
+        width: 75%;
+    }
+
+    .grids-inputs input[type="submit"] {
+        width: 75%;
+    }
+
+    .grids-inputs textarea {
+        width: 75%;
+    }
+
+    .grids-inputs form {
+        width: 64%;
+    }
+
+    .img-empl {
+        width: 43.3%;
+    }
+
+    .info {
+        width: 53%;
+    }
+
+    .mid-grid-top-pic {
+        width: 39%;
+    }
+
+    .mid-grid-top-info {
+        width: 59%;
+    }
+
+    .grids-inputs h3 {
+        font-size: 2em;
+        width: 50%;
+    }
+
+    .top-grid p label {
+        display: none;
+    }
+
+    .top-grid p {
+        margin: 0.5em 0;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 640px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .grids-inputs input[type="text"] {
+        width: 75%;
+    }
+
+    .grids-inputs input[type="submit"] {
+        width: 75%;
+    }
+
+    .grids-inputs textarea {
+        width: 75%;
+    }
+
+    .grids-inputs form {
+        width: 85%;
+    }
+
+    .img-empl {
+        float: none;
+        margin: 2em auto;
+        text-align: center;
+        width: 300px;
+    }
+
+    .info p {
+        width: 90%;
+        text-align: center;
+        float: none;
+        margin: 1em auto 0 auto;
+    }
+
+    .info {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .component {
+        padding: 0em 0 0 0;
+    }
+
+    .grids-inputs h3 {
+        font-size: 2em;
+        width: 67%;
+    }
+
+    .top-grid p label {
+        display: none;
+    }
+
+    .top-grid p {
+        margin: 0.5em 0;
+    }
+
+    .logo {
+        float: none;
+        text-align: center;
+        margin-top: 0em;
+        padding-top: 0.6em;
+    }
+
+    .top-nav {
+        float: none;
+        text-align: center;
+    }
+
+    .top-grid {
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin-right: 0%;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 480px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .grids-inputs input[type="text"] {
+        width: 70%;
+    }
+
+    .grids-inputs input[type="submit"] {
+        width: 70%;
+    }
+
+    .grids-inputs textarea {
+        width: 70%;
+    }
+
+    .grids-inputs form {
+        width: 85%;
+    }
+
+    .img-empl {
+        float: none;
+        margin: 2em auto;
+        text-align: center;
+        width: 300px;
+    }
+
+    .info p {
+        width: 90%;
+        text-align: center;
+        float: none;
+        margin: 1em auto 0 auto;
+    }
+
+    .info {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .component {
+        padding: 0em 0 0 0;
+    }
+
+    .grids-inputs h3 {
+        font-size: 2em;
+        width: 67%;
+    }
+
+    .mid-grids-center p {
+        width: 90%;
+    }
+
+    .top-grid p label {
+        display: none;
+    }
+
+    .top-grid p {
+        margin: 0.5em 0;
+    }
+
+    .logo {
+        float: none;
+        text-align: center;
+        margin-top: 0em;
+        padding-top: 0.6em;
+    }
+
+    .top-nav {
+        float: none;
+        text-align: center;
+    }
+
+    .top-grid {
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin-right: 0%;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .grids-inputs input[type="text"] {
+        width: 60.2%;
+    }
+
+    .grids-inputs input[type="submit"] {
+        width: 60.2%;
+    }
+
+    .grids-inputs textarea {
+        width: 60.2%;
+    }
+
+    .grids-inputs form {
+        width: 85%;
+    }
+
+    .img-empl {
+        float: none;
+        margin: 2em auto;
+        text-align: center;
+        width: 300px;
+    }
+
+    .info p {
+        width: 90%;
+        text-align: center;
+        float: none;
+        margin: 1em auto 0 auto;
+    }
+
+    .info {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .component {
+        padding: 0em 0 0 0;
+    }
+
+    .grids-inputs h3 {
+        font-size: 2em;
+        width: 82%;
+    }
+
+    .top-grid p label {
+        display: none;
+    }
+
+    .top-grid p {
+        margin: 0.5em 0;
+    }
+
+    .logo {
+        float: none;
+        text-align: center;
+        margin-top: 0em;
+        padding-top: 0.6em;
+    }
+
+    .top-nav {
+        float: none;
+        text-align: center;
+    }
+
+    .top-grid {
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin-right: 0%;
+        margin-bottom: 1em;
+    }
+
+    .top-nav ul li a {
+        padding: 2.2em 0.8em;
+    }
+
+    .info h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media only screen and (max-width: 320px) and (min-width: 240px) {
+    .wrap {
+        width: 95%;
+    }
+
+    .grids-inputs input[type="text"] {
+        width: 60.2%;
+    }
+
+    .grids-inputs input[type="submit"] {
+        width: 60.2%;
+    }
+
+    .grids-inputs textarea {
+        width: 60.2%;
+    }
+
+    .grids-inputs form {
+        width: 85%;
+    }
+
+    .img-empl {
+        float: none;
+        margin: 2em auto;
+        text-align: center;
+        width: 278px;
+    }
+
+    .grids-inputs {
+        padding: 2em 0;
+    }
+
+    .grids-inputs input[type="submit"] {
+        padding: 1em 1.3em;
+    }
+
+    .info p {
+        width: 90%;
+        text-align: center;
+        float: none;
+        margin: 1em auto 0 auto;
+    }
+
+    .info {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .component {
+        padding: 0em 0 0 0;
+    }
+
+    .grids-inputs h3 {
+        font-size: 2em;
+        width: 82%;
+    }
+
+    .mid-grids-center p {
+        width: 90%;
+    }
+
+    .top-grid p label {
+        display: none;
+    }
+
+    .top-grid p {
+        margin: 0.5em 0;
+    }
+
+    .logo {
+        float: none;
+        text-align: center;
+        margin-top: 0em;
+        padding-top: 0.6em;
+    }
+
+    .top-nav {
+        float: none;
+        text-align: center;
+    }
+
+    .top-grid {
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin-right: 0%;
+        margin-bottom: 1em;
+    }
+
+    .top-nav ul li a {
+        padding: 2.2em 0.2em;
+        font-size: 0.8em;
+    }
+
+    .info h1 {
+        font-size: 2.5em;
+    }
+
+    .info h2 {
+        font-size: 1.5em;
+    }
+}

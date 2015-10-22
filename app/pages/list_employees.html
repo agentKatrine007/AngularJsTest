@@ -1,0 +1,20 @@
+<div class="info">
+    <h1>Сотрудники</h1>
+    <table id="list">
+        <thead>
+        <tr>
+            <th>ФОТО</th>
+            <th>ИМЯ</th>
+            <th>ДОЛЖНОСТЬ</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="user in users" ng-click="users.doClick(user)">
+            <td><img ng-src="{{user.photo}}"/></td>
+            <td>{{user.name}}</td>
+            <td>{{user.position}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="clear"></div>

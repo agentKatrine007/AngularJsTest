@@ -1,0 +1,20 @@
+<div class="info">
+    <h1>Новый сотрудник</h1>
+    <h3>{{error}}</h3>
+    <div class="grids-inputs">
+        <input type="text" ng-model="user.name" class="textbox" placeholder="Введите имя"/>
+        <input type="text" ng-model="user.position" class="textbox" placeholder="Введите должность"/>
+        <input type="text" ng-model="user.photo" class="textbox" placeholder="Введите URL фотографии"/>
+        <textarea ng-model="user.key_skills" placeholder="Ключевые навыки"></textarea>
+        <input type="submit" ng-click="send(user)" value="Добавить"/>
+        <input type="submit" ng-click="cancel(user)" value="Отмена"/>
+    </div>
+</div>
+<div class="img-empl"></div>
+<div class="clear"></div>
+
+
+
+
+
+
